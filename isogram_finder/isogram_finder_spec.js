@@ -7,7 +7,7 @@ describe('IsogramFinder', function () {
     assert.strictEqual(isogramFinder.isIsogram(), true);
   });
 
-  xit('should be able to detect a non-isogram', function () {
+  it('should be able to detect a non-isogram', function () {
     const isogramFinder = new IsogramFinder('repeated');
     assert.strictEqual(isogramFinder.isIsogram(), false);
   });
