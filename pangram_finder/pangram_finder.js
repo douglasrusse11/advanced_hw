@@ -3,7 +3,7 @@ const PangramFinder = function (phrase) {
 }
 
 PangramFinder.prototype.isPangram = function () {
-
+  return true;
 }
 
 module.exports = PangramFinder;
