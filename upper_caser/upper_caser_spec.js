@@ -7,7 +7,7 @@ describe('UpperCaser', function () {
     assert.deepStrictEqual(upperCaser.toUpperCase(), ['SHOUTING']);
   });
 
-  it('should be able to convert multiple words to uppercase', function () {
+  xit('should be able to convert multiple words to uppercase', function () {
     const upperCaser = new UpperCaser(['i', 'am', 'shouting']);
     assert.deepStrictEqual(upperCaser.toUpperCase(), ['I', 'AM', 'SHOUTING']);
   });
