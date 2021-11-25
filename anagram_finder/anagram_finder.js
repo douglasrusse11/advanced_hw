@@ -3,6 +3,9 @@ const AnagramFinder = function (word) {
 }
 
 AnagramFinder.prototype.findAnagrams = function (otherWords) {
+if (otherWords.findIndex(otherWord => otherWord === this.word) != -1) {
+    otherWords.splice(otherWords.findIndex(otherWord => otherWord === this.word), 1)
+}
     const letterInWord = function (word, otherWord) {
         let letters = word.split('');
         let otherLetters = otherWord.split('')
