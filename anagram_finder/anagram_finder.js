@@ -8,7 +8,7 @@ AnagramFinder.prototype.findAnagrams = function (otherWords) {
         let otherLetters = otherWord.split('')
         let newLetters = [];
         for (let letter of letters) {
-            const index = otherLetters.findIndex(char => char === letter)
+            const index = otherLetters.findIndex(char => char.toLowerCase() === letter.toLowerCase())
             if (index != -1) {
                 otherLetters.splice(index, 1);
             } else {
